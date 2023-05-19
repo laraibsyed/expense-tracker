@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DailyExpense">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="317.0" style="-fx-background-color: #596f90;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#0f2165" layoutX="21.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Which category do you want to spend from?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="categories" layoutX="84.0" layoutY="216.0" prefWidth="150.0" style="-fx-background-color: aliceblue;" />
+            <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="132.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@dailyexpense.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="money" alignment="CENTER" layoutX="21.0" layoutY="286.0" prefHeight="44.0" prefWidth="276.0" textFill="#0f2165">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveCategory" layoutX="110.0" layoutY="252.0" mnemonicParsing="false" onAction="#showRemaining" style="-fx-background-color: #0f2165#0f2165;" text="Save Category" textFill="WHITE" />
+            <Button fx:id="back" layoutX="21.0" layoutY="351.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #0f2165#0f2165;" text="Back" textFill="WHITE" />
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: #598a90;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#0f2165" layoutX="52.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How much would you like to spend?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="amount" layoutX="55.0" layoutY="194.0" promptText="Amount..." style="-fx-background-color: aliceblue;" />
+            <Button fx:id="spend" layoutX="122.0" layoutY="232.0" mnemonicParsing="false" onAction="#spendMore" style="-fx-background-color: #0f2165#0f2165;" text="Spend More" textFill="WHITE" />
+            <Button fx:id="save" layoutX="231.0" layoutY="194.0" mnemonicParsing="false" onAction="#saveAmount" style="-fx-background-color: #0f2165#0f2165;" text="Save" textFill="WHITE" />
+         </children></AnchorPane>
+   </right>
+</BorderPane>
