@@ -12,5 +12,18 @@ An expense tracker in which you can allocate your budget for each category every
 
 ## Screenshots of the Application
 
+![Login](/screenshots/login.jpg)
+
+The user can login using the following:
+- Username: abc
+- Password: 1234
+--------------------------------------------------------------------------------
+
+![Allocate](/screenshots/allocate.jpg)
+![Allocate](/screenshots/allocate2.jpg)
+![Spending](/screenshots/spending.jpg)
+![Spending](/screenshots/spending2.jpg)
+![Analytics](/screenshots/analytics.jpg)
+
 ## Tech Stack
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
